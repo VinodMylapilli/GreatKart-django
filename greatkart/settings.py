@@ -140,6 +140,15 @@ MEDIA_ROOT = BASE_DIR /'media'
 # these code copied from messages framework django documentation
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
-    messages.ERROR: 'dnager',
+    messages.ERROR: 'danger',
     #50: 'critical',
 }
+
+
+# SMTP configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = '173.194.193.108' #'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'vinodkumar52379@gmail.com'
+EMAIL_HOST_PASSWORD = 'bhtchkawwcdudlip'
+EMAIL_USE_TLS = True
