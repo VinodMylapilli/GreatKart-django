@@ -57,3 +57,9 @@ $(document).ready(function() {
 
 });
 // jquery end
+
+// this query used for timeout registration succesfull
+//  here 4000 means 4 seconds 5000 means 5 seconds
+setTimeout(function(){
+    $('#message').fadeOut('slow')
+}, 4000)
